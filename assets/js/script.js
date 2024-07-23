@@ -20,7 +20,7 @@ $(document).ready(function () {
 													<li>Floor: <span>${property.floor}</span></li>
 											</ul>
 											<div class="main-button">
-													<a href="${property.details_link}">Schedule a visit</a>
+													<a href="#contact">Schedule a visit</a>
 											</div>
 									</div>
 							</div>`

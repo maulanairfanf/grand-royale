@@ -1219,6 +1219,8 @@ Properties Style
 
 .properties .item img {
 	border-radius: 10px;
+	height: 300px;
+	object-fit: cover;
 }
 
 .properties .item span.category {
@@ -1245,7 +1247,7 @@ Properties Style
 	display: inline-block;
 	font-size: 15px;
 	color: #4a4a4a;
-	margin-right: 20px;
+	margin-right: 18px;
 }
 
 .properties .item ul li span {
@@ -1406,7 +1408,7 @@ footer {
 
 footer p {
 	text-align: center;
-	line-height: 100px;
+	line-height: 50px;
 	color: #fff;
 	font-size: 16px;
 	font-weight: 400;

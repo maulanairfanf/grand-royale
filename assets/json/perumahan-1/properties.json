@@ -34,5 +34,23 @@
 		"land": "200 sqm",
 		"floor": 2,
 		"image": "assets/images/perumahan-1/home-120.png"
+	},
+	{
+		"category": "Ruko",
+		"price": "Rp 1.600.000.000",
+		"type": "135 (Barat)",
+		"building": "135 sqm",
+		"land": "75 sqm",
+		"floor": 2,
+		"image": "assets/images/perumahan-1/ruko-barat.png"
+	},
+	{
+		"category": "Ruko",
+		"price": "Rp 1.450.000.000",
+		"type": "135 (Timur)",
+		"building": "135 sqm",
+		"land": "105 sqm",
+		"floor": 2,
+		"image": "assets/images/perumahan-1/ruko-timur.png"
 	}
 ]
