@@ -1,0 +1,56 @@
+[
+	{
+		"category": "Home",
+		"price": "Rp 700.000.000",
+		"type": "Type 54",
+		"building": "54 sqm",
+		"land": "88 sqm",
+		"floor": 1,
+		"image": "assets/images/slawi/home-54.png"
+	},
+	{
+		"category": "Home",
+		"price": "Rp 850.000.000",
+		"type": "Type 77",
+		"building": "77 sqm",
+		"land": "104 sqm",
+		"floor": 1,
+		"image": "assets/images/slawi/home-77.png"
+	},
+	{
+		"category": "Home",
+		"price": "Rp 950.000.000",
+		"type": "Type 90",
+		"building": "90 sqm",
+		"land": "112 sqm",
+		"floor": 2,
+		"image": "assets/images/slawi/home-90.png"
+	},
+	{
+		"category": "Home",
+		"price": "Rp 1.100.000.000",
+		"type": "120",
+		"building": "120 sqm",
+		"land": "200 sqm",
+		"floor": 2,
+		"image": "assets/images/slawi/home-120.png"
+	},
+	{
+		"category": "Ruko",
+		"price": "Rp 1.600.000.000",
+		"type": "135 (Barat)",
+		"building": "135 sqm",
+		"land": "75 sqm",
+		"floor": 2,
+		"image": "assets/images/slawi/ruko-barat.png"
+	},
+	{
+		"category": "Ruko",
+		"price": "Rp 1.450.000.000",
+		"type": "135 (Timur)",
+		"building": "135 sqm",
+		"land": "105 sqm",
+		"floor": 2,
+		"image": "assets/images/slawi/ruko-timur.png"
+	}
+]

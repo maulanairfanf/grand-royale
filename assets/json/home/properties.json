@@ -6,7 +6,7 @@
 		"building": "54 sqm",
 		"land": "88 sqm",
 		"floor": 1,
-		"image": "assets/images/perumahan-1/home-54.png"
+		"image": "assets/images/slawi/home-54.png"
 	},
 	{
 		"category": "Home",
@@ -15,7 +15,7 @@
 		"building": "77 sqm",
 		"land": "104 sqm",
 		"floor": 1,
-		"image": "assets/images/perumahan-1/home-77.png"
+		"image": "assets/images/slawi/home-77.png"
 	},
 	{
 		"category": "Home",
@@ -24,7 +24,7 @@
 		"building": "90 sqm",
 		"land": "112 sqm",
 		"floor": 2,
-		"image": "assets/images/perumahan-1/home-90.png"
+		"image": "assets/images/slawi/home-90.png"
 	},
 	{
 		"category": "Home",
@@ -33,7 +33,7 @@
 		"building": "120 sqm",
 		"land": "200 sqm",
 		"floor": 2,
-		"image": "assets/images/perumahan-1/home-120.png"
+		"image": "assets/images/slawi/home-120.png"
 	},
 	{
 		"category": "Ruko",
@@ -42,7 +42,7 @@
 		"building": "135 sqm",
 		"land": "75 sqm",
 		"floor": 2,
-		"image": "assets/images/perumahan-1/ruko-barat.png"
+		"image": "assets/images/slawi/ruko-barat.png"
 	},
 	{
 		"category": "Ruko",
@@ -51,6 +51,6 @@
 		"building": "135 sqm",
 		"land": "105 sqm",
 		"floor": 2,
-		"image": "assets/images/perumahan-1/ruko-timur.png"
+		"image": "assets/images/slawi/ruko-timur.png"
 	}
 ]

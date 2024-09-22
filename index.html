@@ -10,6 +10,10 @@
 			name="msapplication-config"
 			content="assets/images/favicon/browserconfig.xml"
 		/>
+		<meta
+			name="description"
+			content="Grand Royale provides high-quality properties in Slawi, Kedungwringin, and Jadimulya."
+		/>
 
 		<link
 			href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
@@ -84,22 +88,10 @@
 					<div class="col-lg-8 col-md-8">
 						<ul class="info">
 							<li><i class="fa fa-envelope"></i>Grandroyale20@gmail.com</li>
-							<!-- <li><i class="fa fa-map"></i> Sunny Isles Beach, FL 33160</li> -->
 						</ul>
 					</div>
 					<div class="col-lg-4 col-md-4">
 						<ul class="social-links">
-							<!-- <li>
-								<a href="#"><i class="fab fa-facebook"></i></a>
-							</li>
-							<li>
-								<a href="https://x.com/minthu" target="_blank"
-									><i class="fab fa-twitter"></i
-								></a>
-							</li>
-							<li>
-								<a href="#"><i class="fab fa-linkedin"></i></a>
-							</li> -->
 							<li>
 								<a href="https://www.instagram.com/grandroyale_corp/"
 									><i class="fab fa-instagram"></i
@@ -113,18 +105,21 @@
 
 		<!-- ***** Header Area Start ***** -->
 		<header class="header-area header-sticky">
-			<div class="container">
+			<div class="container" id="navbar">
 				<div class="row">
 					<div class="col-12">
 						<nav class="main-nav">
-							<!-- ***** Logo Start ***** -->
-							<a href="index.html" class="logo">
-								<h1>GrandRoyale</h1>
+							<a href="index.html" class="logo" style="margin-top: 5px">
+								<img src="/assets/images/logo.png" style="width: 90px" />
 							</a>
-							<!-- ***** Logo End ***** -->
-							<!-- ***** Menu Start ***** -->
 							<ul class="nav">
-								<li><a href="index.html" class="active">Home</a></li>
+								<li><a href="slawi.html" class="active">Slawi</a></li>
+								<li>
+									<a href="kedungwringin.html" class="active">Kedungwringin</a>
+								</li>
+								<li>
+									<a href="jadimulya.html" class="active">Jadimulya</a>
+								</li>
 								<li>
 									<a href="#"
 										><i class="fa fa-calendar"></i> Schedule a visit</a
@@ -134,7 +129,6 @@
 							<a class="menu-trigger">
 								<span>Menu</span>
 							</a>
-							<!-- ***** Menu End ***** -->
 						</nav>
 					</div>
 				</div>
@@ -142,7 +136,7 @@
 		</header>
 		<!-- ***** Header Area End ***** -->
 
-		<div class="main-banner">
+		<div class="main-banner" id="home">
 			<div class="owl-carousel owl-banner">
 				<div class="item item-1">
 					<div class="header-text">
@@ -156,6 +150,7 @@
 						<h2>Pray Here!<br />Experience Peace and Serenity</h2>
 					</div>
 				</div>
+
 				<div class="item item-3">
 					<div class="header-text">
 						<span class="category">Home</span>
@@ -165,97 +160,235 @@
 			</div>
 		</div>
 
+		<div class="container my-5">
+			<h2 class="text-center mb-5">Get the best offers from us</h2>
+			<div id="contactFormContainer"></div>
+		</div>
+
 		<div class="properties section">
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-4 offset-lg-4">
 						<div class="section-heading text-center">
 							<h6>| Properties</h6>
-							<h2>Grand Royale Provide The Best Property You Like</h2>
+							<h2>
+								<img src="/assets/images/logo.png" /> <br />
+								Make a better living
+							</h2>
 							<div class="main-button" style="margin-top: 10px">
 								<a
 									href="assets/pdf/product-knowledge.pdf"
 									download="Product_Knowledge.pdf"
 									>Product Knowledge</a
 								>
+
+								<a
+									href="assets/pdf/product-knowledge.pdf"
+									download="Product_Knowledge.pdf"
+									>Brosur</a
+								>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="row" id="content"></div>
+				<div
+					class="row"
+					id="content"
+					data-json="assets/json/slawi/properties.json"
+				></div>
 			</div>
 		</div>
 
-		<div class="contact section" id="contact">
+		<!-- <div class="section best-deal">
 			<div class="container">
 				<div class="row">
-					<div class="col-lg-4 offset-lg-4">
-						<div class="section-heading text-center">
-							<h6>| Contact Us</h6>
-							<h2>Get In Touch With Grand Royale Agents</h2>
+					<div class="col-lg-4">
+						<div class="section-heading">
+							<h6>| Best Deal</h6>
+							<h2>Find Your Best Deal Right Now!</h2>
+						</div>
+					</div>
+					<div class="col-lg-12">
+						<div class="tabs-content">
+							<div class="row">
+								<div class="nav-wrapper">
+									<ul class="nav nav-tabs" role="tablist">
+										<li class="nav-item" role="presentation">
+											<button
+												class="nav-link active"
+												id="appartment-tab"
+												data-bs-toggle="tab"
+												data-bs-target="#appartment"
+												type="button"
+												role="tab"
+												aria-controls="appartment"
+												aria-selected="true"
+											>
+												GR Slawi
+											</button>
+										</li>
+										<li class="nav-item" role="presentation">
+											<button
+												class="nav-link"
+												id="villa-tab"
+												data-bs-toggle="tab"
+												data-bs-target="#villa"
+												type="button"
+												role="tab"
+												aria-controls="villa"
+												aria-selected="false"
+											>
+												GR Kedungwringin
+											</button>
+										</li>
+										<li class="nav-item" role="presentation">
+											<button
+												class="nav-link"
+												id="penthouse-tab"
+												data-bs-toggle="tab"
+												data-bs-target="#penthouse"
+												type="button"
+												role="tab"
+												aria-controls="penthouse"
+												aria-selected="false"
+											>
+												GR Jadimulya
+											</button>
+										</li>
+									</ul>
+								</div>
+								<div class="tab-content" id="myTabContent">
+									<div
+										class="tab-pane fade show active"
+										id="appartment"
+										role="tabpanel"
+										aria-labelledby="appartment-tab"
+									>
+										<div class="row">
+											<div class="col-lg-6">
+												<img src="assets/images/deal-01.jpg" alt="" />
+											</div>
+											<div class="col-lg-6">
+												<h4>Extra Info About Property</h4>
+												<p>
+													Lorem ipsum dolor sit amet, consectetur adipiscing
+													elit, do eiusmod tempor pack incididunt ut labore et
+													dolore magna aliqua quised ipsum suspendisse.
+													<br /><br />When you need free CSS templates, you can
+													simply type TemplateMo in any search engine website.
+													In addition, you can type TemplateMo Portfolio,
+													TemplateMo One Page Layouts, etc.
+												</p>
+												<div class="icon-button">
+													<a href="property-details.html"
+														><i class="fa fa-calendar"></i> Schedule a visit</a
+													>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div
+										class="tab-pane fade"
+										id="villa"
+										role="tabpanel"
+										aria-labelledby="villa-tab"
+									>
+										<div class="row">
+											<div class="col-lg-6">
+												<img src="assets/images/deal-02.jpg" alt="" />
+											</div>
+											<div class="col-lg-6">
+												<h4>Detail Info About Villa</h4>
+												<p>
+													Lorem ipsum dolor sit amet, consectetur adipiscing
+													elit, do eiusmod tempor pack incididunt ut labore et
+													dolore magna aliqua quised ipsum suspendisse.
+													<br /><br />Swag fanny pack lyft blog twee. JOMO
+													ethical copper mug, succulents typewriter shaman DIY
+													kitsch twee taiyaki fixie hella venmo after messenger
+													poutine next level humblebrag swag franzen.
+												</p>
+												<div class="icon-button">
+													<a href="property-details.html"
+														><i class="fa fa-calendar"></i> Schedule a visit</a
+													>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div
+										class="tab-pane fade"
+										id="penthouse"
+										role="tabpanel"
+										aria-labelledby="penthouse-tab"
+									>
+										<div class="row">
+											<div class="col-lg-6">
+												<img src="assets/images/deal-03.jpg" alt="" />
+											</div>
+											<div class="col-lg-6">
+												<h4>Extra Info About Penthouse</h4>
+												<p>
+													Lorem ipsum dolor sit amet, consectetur adipiscing
+													elit, do eiusmod tempor pack incididunt ut labore et
+													dolore magna aliqua quised ipsum suspendisse.
+													<br /><br />Swag fanny pack lyft blog twee. JOMO
+													ethical copper mug, succulents typewriter shaman DIY
+													kitsch twee taiyaki fixie hella venmo after messenger
+													poutine next level humblebrag swag franzen.
+												</p>
+												<div class="icon-button">
+													<a href="property-details.html"
+														><i class="fa fa-calendar"></i> Schedule a visit</a
+													>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
+		</div> -->
 
-		<div class="contact-content">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-6">
-						<div id="map">
-							<iframe
-								src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.1909310352!2d109.14068739999999!3d-6.986776899999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6fbf002f42ef77%3A0xa2e3a315d2746c3e!2sGrand%20Royale%20Slawi!5e0!3m2!1sid!2sid!4v1721702414287!5m2!1sid!2sid"
-								width="100%"
-								height="500px"
-								frameborder="0"
-								style="
-									border: 0;
-									border-radius: 10px;
-									box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
-								"
-								allowfullscreen=""
-							></iframe>
-						</div>
+		<div class="contact-us" data-json="assets/json/home/contact-us.json"></div>
+
+		<div id="whatsapp-logo"></div>
+
+		<!-- Modal -->
+		<div
+			class="modal fade"
+			id="propertyModal"
+			tabindex="-1"
+			aria-labelledby="propertyModalLabel"
+			aria-hidden="true"
+		>
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="propertyModalLabel">
+							Property Details
+						</h5>
+						<button
+							type="button"
+							class="btn-close"
+							data-bs-dismiss="modal"
+							aria-label="Close"
+						></button>
 					</div>
-					<div class="col-lg-6">
-						<img
-							src="assets/images/perumahan-1/denah.png"
-							alt=""
-							style="
-								border: 0;
-								border-radius: 10px;
-								box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
-								height: 500px;
-								width: 100%;
-							"
-						/>
+					<div class="modal-body" id="modalBody">
+						<!-- Dynamic content will be inserted here -->
 					</div>
-				</div>
-				<div class="row">
-					<div class="col-lg-6">
-						<a href="https://wa.me/628112425805" target="_blank">
-							<div class="item phone">
-								<img
-									src="assets/images/phone-icon.png"
-									alt=""
-									style="max-width: 52px"
-								/>
-								<h6>+628112425805<br /><span>Susilawati</span></h6>
-							</div>
-						</a>
-					</div>
-					<div class="col-lg-6">
-						<a href="https://wa.me/6282129166169" target="_blank">
-							<div class="item phone">
-								<img
-									src="assets/images/phone-icon.png"
-									alt=""
-									style="max-width: 52px"
-								/>
-								<h6>+6282129166169<br /><span>Vincent</span></h6>
-							</div>
-						</a>
+					<div class="modal-footer">
+						<button
+							type="button"
+							class="btn btn-secondary"
+							data-bs-dismiss="modal"
+						>
+							Close
+						</button>
 					</div>
 				</div>
 			</div>
@@ -274,14 +407,24 @@
 			</div>
 		</footer>
 
-		<!-- Scripts -->
-		<!-- Bootstrap core JavaScript -->
+		<script
+			type="text/javascript"
+			src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+		></script>
 		<script src="vendor/jquery/jquery.min.js"></script>
 		<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 		<script src="assets/js/isotope.min.js"></script>
 		<script src="assets/js/owl-carousel.js"></script>
 		<script src="assets/js/counter.js"></script>
 		<script src="assets/js/custom.js"></script>
-		<script src="assets/js/script.js"></script>
+		<script src="assets/js/properties.js"></script>
+		<script src="assets/js/contact-us.js"></script>
+		<script src="assets/js/whats-app.js"></script>
+		<script src="assets/js/form-email.js"></script>
+		<script>
+			;(function () {
+				emailjs.init('YVDkK0iAqEbTcACgi') // Replace with your user ID
+			})()
+		</script>
 	</body>
 </html>
