@@ -6,7 +6,21 @@
 		"building": "54 sqm",
 		"land": "88 sqm",
 		"floor": 1,
-		"image": "assets/images/slawi/home-54.png"
+		"image": "assets/images/slawi/home-54.png",
+		"details": {
+			"pondasi": "Batu Kali",
+			"lantai": "Besi Ulir 13",
+			"dinding": "Bata Merah",
+			"cat": "Catylax Dulux / Setara",
+			"plafond": "Baja Ringan Hollo",
+			"atap": "Baja Ringan Taso",
+			"tutup_atap": "Genteng",
+			"kusen_jendela": "Alumunium 3\"",
+			"pintu": "Baja GG",
+			"sanitair": "ICEPOL / Setara",
+			"listrik": "1300 watt",
+			"air": "PDAM"
+		}
 	},
 	{
 		"category": "Home",
@@ -15,7 +29,21 @@
 		"building": "77 sqm",
 		"land": "104 sqm",
 		"floor": 1,
-		"image": "assets/images/slawi/home-77.png"
+		"image": "assets/images/slawi/home-77.png",
+		"details": {
+			"pondasi": "Batu Kali",
+			"lantai": "Besi Ulir 13",
+			"dinding": "Bata Merah",
+			"cat": "Catylax Dulux / Setara",
+			"plafond": "Baja Ringan Hollo",
+			"atap": "Baja Ringan Taso",
+			"tutup_atap": "Genteng",
+			"kusen_jendela": "Alumunium 3\"",
+			"pintu": "Baja GG",
+			"sanitair": "ICEPOL / Setara",
+			"listrik": "1300 watt",
+			"air": "PDAM"
+		}
 	},
 	{
 		"category": "Home",
@@ -24,7 +52,21 @@
 		"building": "90 sqm",
 		"land": "112 sqm",
 		"floor": 2,
-		"image": "assets/images/slawi/home-90.png"
+		"image": "assets/images/slawi/home-90.png",
+		"details": {
+			"pondasi": "Batu Kali",
+			"lantai": "Besi Ulir 13",
+			"dinding": "Bata Merah",
+			"cat": "Catylax Dulux / Setara",
+			"plafond": "Baja Ringan Hollo",
+			"atap": "Baja Ringan Taso",
+			"tutup_atap": "Genteng",
+			"kusen_jendela": "Alumunium 3\"",
+			"pintu": "Baja GG",
+			"sanitair": "ICEPOL / Setara",
+			"listrik": "1300 watt",
+			"air": "PDAM"
+		}
 	},
 	{
 		"category": "Home",
@@ -33,7 +75,21 @@
 		"building": "120 sqm",
 		"land": "200 sqm",
 		"floor": 2,
-		"image": "assets/images/slawi/home-120.png"
+		"image": "assets/images/slawi/home-120.png",
+		"details": {
+			"pondasi": "Batu Kali",
+			"lantai": "Besi Ulir 13",
+			"dinding": "Bata Merah",
+			"cat": "Catylax Dulux / Setara",
+			"plafond": "Baja Ringan Hollo",
+			"atap": "Baja Ringan Taso",
+			"tutup_atap": "Genteng",
+			"kusen_jendela": "Alumunium 3\"",
+			"pintu": "Baja GG",
+			"sanitair": "ICEPOL / Setara",
+			"listrik": "1300 watt",
+			"air": "PDAM"
+		}
 	},
 	{
 		"category": "Ruko",
@@ -42,7 +98,21 @@
 		"building": "135 sqm",
 		"land": "75 sqm",
 		"floor": 2,
-		"image": "assets/images/slawi/ruko-barat.png"
+		"image": "assets/images/slawi/ruko-barat.png",
+		"details": {
+			"pondasi": "Batu Kali",
+			"lantai": "Besi Ulir 13",
+			"dinding": "Bata Merah",
+			"cat": "Catylax Dulux / Setara",
+			"plafond": "Baja Ringan Hollo",
+			"atap": "Baja Ringan Taso",
+			"tutup_atap": "Genteng",
+			"kusen_jendela": "Alumunium 3\"",
+			"pintu": "Baja GG",
+			"sanitair": "ICEPOL / Setara",
+			"listrik": "1300 watt",
+			"air": "PDAM"
+		}
 	},
 	{
 		"category": "Ruko",
@@ -51,6 +121,20 @@
 		"building": "135 sqm",
 		"land": "105 sqm",
 		"floor": 2,
-		"image": "assets/images/slawi/ruko-timur.png"
+		"image": "assets/images/slawi/ruko-timur.png",
+		"details": {
+			"pondasi": "Batu Kali",
+			"lantai": "Besi Ulir 13",
+			"dinding": "Bata Merah",
+			"cat": "Catylax Dulux / Setara",
+			"plafond": "Baja Ringan Hollo",
+			"atap": "Baja Ringan Taso",
+			"tutup_atap": "Genteng",
+			"kusen_jendela": "Alumunium 3\"",
+			"pintu": "Baja GG",
+			"sanitair": "ICEPOL / Setara",
+			"listrik": "1300 watt",
+			"air": "PDAM"
+		}
 	}
 ]
