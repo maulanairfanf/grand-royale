@@ -202,6 +202,7 @@ body {
 
 .section-heading {
 	margin-bottom: 70px;
+	margin-top: 70px;
 }
 
 .section-heading h2 {
@@ -1901,4 +1902,40 @@ body {
 	width: 50px;
 	height: 50px;
 	cursor: pointer;
+}
+
+.parallax {
+	position: relative;
+	height: 220vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.parallax .bg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	opacity: 0.7;  /* Set initial opacity */
+}
+
+@media (max-width: 768px) {
+  .parallax .bg {
+    position: static;  /* Menonaktifkan parallax di mobile */
+    background-attachment: initial;  /* Menonaktifkan attachment */
+    background-position: center;  /* Menjaga posisi gambar tetap */
+    opacity: 1;  /* Menjaga opacity lebih terang di mobile */
+  }
+
+  /* Menonaktifkan efek parallax (menghilangkan efek scroll) */
+  .parallax {
+    height: auto;  /* Biarkan tinggi menyesuaikan konten */
+		display: block;
+  }
 }

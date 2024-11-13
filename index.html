@@ -21,6 +21,8 @@
 		/>
 
 		<title>Grand Royale</title>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 
 		<!-- Bootstrap core CSS -->
 		<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
@@ -94,7 +96,7 @@
 						<ul class="social-links">
 							<li>
 								<a href="https://www.instagram.com/grandroyale_corp/"
-									><i class="fab fa-instagram"></i
+									><i class="fab fa-road"></i
 								></a>
 							</li>
 						</ul>
@@ -166,39 +168,41 @@
 		</div>
 
 		<div class="properties section">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-4 offset-lg-4">
-						<div class="section-heading text-center">
-							<h6>| Properties</h6>
-							<h2>
-								<img src="/assets/images/logo.png" /> <br />
-								Make a better living
-							</h2>
-							<div class="main-button" style="margin-top: 10px">
-								<a
-									href="assets/pdf/product-knowledge.pdf"
-									download="Product_Knowledge.pdf"
-									>Product Knowledge</a
-								>
+			<section class="parallax">
+				<div class="bg"></div>
+					<div class="container">
+						<div class="row ">
+							<div class="col-lg-4 offset-lg-4">
+								<div class="section-heading text-center">
+									<h6 class="mt-2">| Properties</h6>
+									<h2>
+										<img src="/assets/images/logo.png" /> <br />
+										Make a better living
+									</h2>
+									<div class="main-button" style="margin-top: 10px">
+										<a
+											href="assets/pdf/product-knowledge.pdf"
+											download="Product_Knowledge.pdf"
+											>Product Knowledge</a
+										>
 
-								<a
-									href="assets/pdf/product-knowledge.pdf"
-									download="Product_Knowledge.pdf"
-									>Brosur</a
-								>
+										<a
+											href="assets/pdf/product-knowledge.pdf"
+											download="Product_Knowledge.pdf"
+											>Brosur</a
+										>
+									</div>
+								</div>
 							</div>
 						</div>
-					</div>
+						<div
+							class="row"
+							id="content"
+							data-json="assets/json/slawi/properties.json"
+						></div>
 				</div>
-				<div
-					class="row"
-					id="content"
-					data-json="assets/json/slawi/properties.json"
-				></div>
-			</div>
+			</section>
 		</div>
-
 		<!-- <div class="section best-deal">
 			<div class="container">
 				<div class="row">
@@ -422,9 +426,44 @@
 		<script src="assets/js/whats-app.js"></script>
 		<script src="assets/js/form-email.js"></script>
 		<script>
-			;(function () {
+			(function () {
 				emailjs.init('YVDkK0iAqEbTcACgi') // Replace with your user ID
 			})()
+		</script>
+		<script>
+gsap.registerPlugin(ScrollTrigger);
+
+let getRatio = el => window.innerHeight / (window.innerHeight + el.offsetHeight);
+
+// Mengecek jika viewport lebih besar dari 768px, hanya di desktop atau tablet
+if (window.innerWidth > 768) {
+  const section = document.querySelector(".parallax");
+  if (section) {
+    section.bg = section.querySelector(".bg");
+
+    // Berikan gambar latar belakang pada elemen tersebut
+    section.bg.style.backgroundImage = `url(https://picsum.photos/1600/800?random=1)`;
+
+    // Atur animasi parallax menggunakan GSAP
+    gsap.fromTo(section.bg, {
+      backgroundPosition: `50% ${-window.innerHeight * getRatio(section)}px`,
+      opacity: 0.7  // Set opacity awal untuk latar belakang
+    }, {
+      backgroundPosition: `50% ${window.innerHeight * (1 - getRatio(section))}px`,
+      opacity: 1,  // Opacity berubah menjadi lebih tinggi saat scroll
+      ease: "none",
+      scrollTrigger: {
+        trigger: section,
+        start: "top top",  // Dimulai saat bagian atas elemen berada di atas viewport
+        end: "bottom top", // Berakhir saat bagian bawah elemen mencapai bagian atas viewport
+        scrub: true,
+        invalidateOnRefresh: true // Agar tetap responsif
+      }
+    });
+  }
+}
+
+
 		</script>
 	</body>
 </html>
