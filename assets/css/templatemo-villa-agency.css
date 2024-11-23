@@ -1922,20 +1922,49 @@ body {
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-	opacity: 0.7;  /* Set initial opacity */
+	opacity: 0.7; /* Set initial opacity */
 }
 
 @media (max-width: 768px) {
-  .parallax .bg {
-    position: static;  /* Menonaktifkan parallax di mobile */
-    background-attachment: initial;  /* Menonaktifkan attachment */
-    background-position: center;  /* Menjaga posisi gambar tetap */
-    opacity: 1;  /* Menjaga opacity lebih terang di mobile */
-  }
+	.parallax .bg {
+		position: static; /* Menonaktifkan parallax di mobile */
+		background-attachment: initial; /* Menonaktifkan attachment */
+		background-position: center; /* Menjaga posisi gambar tetap */
+		opacity: 1; /* Menjaga opacity lebih terang di mobile */
+	}
 
-  /* Menonaktifkan efek parallax (menghilangkan efek scroll) */
-  .parallax {
-    height: auto;  /* Biarkan tinggi menyesuaikan konten */
+	/* Menonaktifkan efek parallax (menghilangkan efek scroll) */
+	.parallax {
+		height: auto; /* Biarkan tinggi menyesuaikan konten */
 		display: block;
-  }
+	}
+}
+
+.facility-section {
+	background-color: white;
+	color: #f35525;
+	padding: 50px 20px;
+}
+.facility-card {
+	background: rgba(255, 255, 255, 0.1);
+	border: none;
+	border-radius: 10px;
+	padding: 20px;
+	text-align: center;
+}
+.facility-icon {
+	font-size: 40px;
+	margin-bottom: 15px;
+}
+.facility-title {
+	font-size: 1.5rem;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+.facility-description {
+	font-size: 1rem;
+}
+
+.team-section {
+	padding: 100px 0px;
 }

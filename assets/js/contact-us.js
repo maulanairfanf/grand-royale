@@ -7,10 +7,8 @@ document.addEventListener('DOMContentLoaded', function () {
 		fetch(jsonFilePath)
 			.then(response => response.json())
 			.then(data => {
-
-
 				const contactSectionHTML = `
-									<div class="contact section" id="parallax">
+									<div class="contact section" >
 											<div class="container">
 													<div class="row">
 															<div class="col-lg-4 offset-lg-4">
@@ -43,7 +41,6 @@ document.addEventListener('DOMContentLoaded', function () {
 									`
 
 				element.innerHTML = contactSectionHTML
-
 			})
 			.catch(error => {
 				console.error('Error loading JSON data:', error)
