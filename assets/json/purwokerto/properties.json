@@ -1,0 +1,47 @@
+[
+	{
+		"category": "Home",
+		"price": "Rp 490.000.000",
+		"type": "Type 45",
+		"building": "45 sqm",
+		"land": "84 sqm",
+		"floor": 1,
+		"image": "assets/images/purwokerto/home-54.png"
+	},
+	{
+		"category": "Home",
+		"price": "Rp 575.000.000",
+		"type": "Type 54",
+		"building": "54 sqm",
+		"land": "98 sqm",
+		"floor": 1,
+		"image": "assets/images/purwokerto/home-54.png"
+	},
+	{
+		"category": "Home",
+		"price": "Rp 625.000.000",
+		"type": "Type 54",
+		"building": "54 sqm",
+		"land": "112 sqm",
+		"floor": 1,
+		"image": "assets/images/purwokerto/home-54.png"
+	},
+	{
+		"category": "Home",
+		"price": "Rp 700.000.000",
+		"type": "62",
+		"building": "62 sqm",
+		"land": "112 sqm",
+		"floor": 2,
+		"image": "assets/images/purwokerto/home-62.png"
+	},
+	{
+		"category": "Home",
+		"price": "Rp 800.000.000",
+		"type": "77",
+		"building": "77 sqm",
+		"land": "126 sqm",
+		"floor": 2,
+		"image": "assets/images/purwokerto/home-77.png"
+	}
+]

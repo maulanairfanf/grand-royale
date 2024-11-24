@@ -1,0 +1,38 @@
+[
+	{
+		"category": "Home",
+		"price": "Coming Soon",
+		"type": "Type 54",
+		"building": "54 sqm",
+		"land": "105 sqm",
+		"floor": 1,
+		"image": "assets/images/cirebon/home-54.png"
+	},
+	{
+		"category": "Home",
+		"price": "Coming Soon",
+		"type": "Type 62",
+		"building": "62 sqm",
+		"land": "105 sqm",
+		"floor": 1,
+		"image": "assets/images/cirebon/home-62.png"
+	},
+	{
+		"category": "Home",
+		"price": "Coming Soon",
+		"type": "Type 77",
+		"building": "77 sqm",
+		"land": "112 sqm",
+		"floor": 1,
+		"image": "assets/images/cirebon/home-77.png"
+	},
+	{
+		"category": "Home",
+		"price": "Coming Soon",
+		"type": "77",
+		"building": "77 sqm",
+		"land": "112 sqm",
+		"floor": 2,
+		"image": "assets/images/cirebon/home-77.png"
+	}
+]
