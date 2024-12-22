@@ -6,7 +6,21 @@
 		"building": "45 sqm",
 		"land": "84 sqm",
 		"floor": 1,
-		"image": "assets/images/purwokerto/home-54.png"
+		"image": "assets/images/purwokerto/home-54.png",
+		"details": {
+			"pondasi": "Batu Kali",
+			"lantai": "Besi Ulir 13",
+			"dinding": "Bata Merah",
+			"cat": "Catylax Dulux / Setara",
+			"plafond": "Baja Ringan Hollo",
+			"atap": "Baja Ringan Taso",
+			"tutup_atap": "Genteng",
+			"kusen_jendela": "Alumunium 3\"",
+			"pintu": "Baja GG",
+			"sanitair": "ICEPOL / Setara",
+			"listrik": "1300 watt",
+			"air": "PDAM"
+		}
 	},
 	{
 		"category": "Home",
@@ -15,7 +29,21 @@
 		"building": "54 sqm",
 		"land": "98 sqm",
 		"floor": 1,
-		"image": "assets/images/purwokerto/home-54.png"
+		"image": "assets/images/purwokerto/home-54.png",
+		"details": {
+			"pondasi": "Batu Kali",
+			"lantai": "Besi Ulir 13",
+			"dinding": "Bata Merah",
+			"cat": "Catylax Dulux / Setara",
+			"plafond": "Baja Ringan Hollo",
+			"atap": "Baja Ringan Taso",
+			"tutup_atap": "Genteng",
+			"kusen_jendela": "Alumunium 3\"",
+			"pintu": "Baja GG",
+			"sanitair": "ICEPOL / Setara",
+			"listrik": "1300 watt",
+			"air": "PDAM"
+		}
 	},
 	{
 		"category": "Home",
@@ -24,7 +52,21 @@
 		"building": "54 sqm",
 		"land": "112 sqm",
 		"floor": 1,
-		"image": "assets/images/purwokerto/home-54.png"
+		"image": "assets/images/purwokerto/home-54.png",
+		"details": {
+			"pondasi": "Batu Kali",
+			"lantai": "Besi Ulir 13",
+			"dinding": "Bata Merah",
+			"cat": "Catylax Dulux / Setara",
+			"plafond": "Baja Ringan Hollo",
+			"atap": "Baja Ringan Taso",
+			"tutup_atap": "Genteng",
+			"kusen_jendela": "Alumunium 3\"",
+			"pintu": "Baja GG",
+			"sanitair": "ICEPOL / Setara",
+			"listrik": "1300 watt",
+			"air": "PDAM"
+		}
 	},
 	{
 		"category": "Home",
@@ -33,7 +75,21 @@
 		"building": "62 sqm",
 		"land": "112 sqm",
 		"floor": 2,
-		"image": "assets/images/purwokerto/home-62.png"
+		"image": "assets/images/purwokerto/home-62.png",
+		"details": {
+			"pondasi": "Batu Kali",
+			"lantai": "Besi Ulir 13",
+			"dinding": "Bata Merah",
+			"cat": "Catylax Dulux / Setara",
+			"plafond": "Baja Ringan Hollo",
+			"atap": "Baja Ringan Taso",
+			"tutup_atap": "Genteng",
+			"kusen_jendela": "Alumunium 3\"",
+			"pintu": "Baja GG",
+			"sanitair": "ICEPOL / Setara",
+			"listrik": "1300 watt",
+			"air": "PDAM"
+		}
 	},
 	{
 		"category": "Home",
@@ -42,6 +98,20 @@
 		"building": "77 sqm",
 		"land": "126 sqm",
 		"floor": 2,
-		"image": "assets/images/purwokerto/home-77.png"
+		"image": "assets/images/purwokerto/home-77.png",
+		"details": {
+			"pondasi": "Batu Kali",
+			"lantai": "Besi Ulir 13",
+			"dinding": "Bata Merah",
+			"cat": "Catylax Dulux / Setara",
+			"plafond": "Baja Ringan Hollo",
+			"atap": "Baja Ringan Taso",
+			"tutup_atap": "Genteng",
+			"kusen_jendela": "Alumunium 3\"",
+			"pintu": "Baja GG",
+			"sanitair": "ICEPOL / Setara",
+			"listrik": "1300 watt",
+			"air": "PDAM"
+		}
 	}
 ]
