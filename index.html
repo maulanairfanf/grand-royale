@@ -126,11 +126,11 @@
 								<li>
 									<a href="cirebon.html" class="active">cirebon</a>
 								</li>
-								<li>
+								<!-- <li>
 									<a href="#"
 										><i class="fa fa-calendar"></i> Schedule a visit</a
 									>
-								</li>
+								</li> -->
 							</ul>
 							<a class="menu-trigger">
 								<span>Menu</span>
@@ -150,17 +150,24 @@
 						<h2>Enter Here!<br />Begin a Comfortable Life</h2>
 					</div>
 				</div>
+
 				<div class="item item-2">
 					<div class="header-text">
-						<span class="category">Mushola</span>
-						<h2>Pray Here!<br />Experience Peace and Serenity</h2>
+						<span class="category">Home</span>
+						<h2>Welcome Home!<br />Your Sanctuary of Comfort</h2>
 					</div>
 				</div>
 
 				<div class="item item-3">
 					<div class="header-text">
-						<span class="category">Home</span>
-						<h2>Welcome Home!<br />Your Sanctuary of Comfort</h2>
+						<span class="category">Shop</span>
+						<h2>Grow Your Business!<br />A Strategic Plac</h2>
+					</div>
+				</div>
+				<div class="item item-4">
+					<div class="header-text">
+						<span class="category">Facility</span>
+						<h2>Enjoy the Amenities!<br />Convenience in One Place</h2>
 					</div>
 				</div>
 			</div>
@@ -223,6 +230,45 @@
 						</div>
 					</div>
 				</section>
+			</div>
+		</div>
+
+		<div class="container my-5">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6 offset-lg-3">
+						<div class="section-heading text-center">
+							<h6>| Bank Partner</h6>
+							<h2>Bekerja sama dengan</h2>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="owl-carousel">
+				<div class="bank-item">
+					<img
+						src="https://images.bisnis.com/posts/2021/02/01/1350506/logo-bank-syariah-indonesia-1.jpg"
+						alt="Bank BSI Logo"
+					/>
+				</div>
+				<div class="bank-item">
+					<img
+						src="https://freepngdesign.com/content/uploads/images/p-2813-2-bank-mandiri-logo-png-transparent-logo-699390155888.png"
+						alt="Bank Mandiri Logo"
+					/>
+				</div>
+				<div class="bank-item">
+					<img
+						src="https://4.bp.blogspot.com/-fFJgJsxDvcA/Wg0O4QXOuiI/AAAAAAAAE7U/xiJTyPEVZC0B-61d6IsJaVYRJrnNkJS-QCLcBGAs/s1600/Bank%2BBTN.png"
+						alt="Bank BTN Logo"
+					/>
+				</div>
+				<div class="bank-item">
+					<img
+						src="https://static.brandirectory.com/logos/panb001_3_logo_panin_bank.png"
+						alt="Bank Panin Logo"
+					/>
+				</div>
 			</div>
 		</div>
 
@@ -342,6 +388,24 @@
 					)
 				}
 			}
+		</script>
+		<script>
+			$(document).ready(function () {
+				$('.owl-carousel').owlCarousel({
+					loop: true,
+					margin: 10,
+					autoplay: true,
+					autoplayTimeout: 3000,
+					autoplayHoverPause: true,
+					nav: false,
+					dots: false,
+					responsive: {
+						0: { items: 1 },
+						600: { items: 2 },
+						1000: { items: 4 },
+					},
+				})
+			})
 		</script>
 	</body>
 </html>

@@ -539,7 +539,7 @@ Header Style
 	letter-spacing: 0.25px;
 }
 
-.header-area .main-nav .nav li:last-child a {
+/* .header-area .main-nav .nav li:last-child a {
 	background-color: #1e1e1e;
 	color: #fff;
 	font-size: 14px;
@@ -559,11 +559,11 @@ Header Style
 	margin-right: 10px;
 	border-radius: 50%;
 	margin-left: -1px;
-}
+} */
 
-.header-area .main-nav .nav li:last-child:hover a {
+/* .header-area .main-nav .nav li:last-child:hover a {
 	background-color: #1e1e1e;
-}
+} */
 
 .header-area .main-nav .nav li:last-child:hover a i {
 	color: #fff;
@@ -815,18 +815,23 @@ Banner Style
 	background-size: cover;
 	padding: 220px 20% 320px 20%;
 	margin-top: 0px;
+	/* height: 300px; */
 }
 
 #home .item-1 {
-	background-image: url(../images/slawi/banner-gerbang.png);
+	background-image: url(../images/home/banner-gerbang.png);
 }
 
 #home .item-2 {
-	background-image: url(../images/slawi/banner-mushola.png);
+	background-image: url(../images/slawi/banner-rumah.png);
 }
 
 #home .item-3 {
-	background-image: url(../images/slawi/banner-rumah.png);
+	background-image: url(../images/slawi/ruko-barat.png);
+}
+
+#home .item-4 {
+	background-image: url(../images/cirebon/banner-fasilitas.png);
 }
 
 #slawi .item-1 {
@@ -1766,4 +1771,18 @@ body {
 
 .facility-card:hover {
 	color: #f35525;
+}
+
+.owl-carousel .bank-item {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+	height: 200px;
+}
+
+.owl-carousel .bank-item img {
+	max-width: 150px;
+	max-height: 100px;
+	object-fit: contain;
 }
