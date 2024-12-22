@@ -2,15 +2,24 @@ function createContactForm() {
 	const form = document.createElement('form')
 	form.id = 'contactForm'
 	form.className = 'row' // Add Bootstrap row class for layout
+	form.name = 'contact-form'
+	form.method = 'post'
 
 	// Create a single row for the fields and button
 	const fieldGroup = document.createElement('div')
 	fieldGroup.className = 'd-flex col-12' // Use flex to align items
 
 	const fields = [
-		{ label: 'Name', type: 'text', id: 'name', required: true },
-		{ label: 'Email', type: 'email', id: 'email', required: true },
+		{ name: 'name', label: 'Name', type: 'text', id: 'name', required: true },
 		{
+			name: 'email',
+			label: 'Email',
+			type: 'email',
+			id: 'email',
+			required: true,
+		},
+		{
+			name: 'number',
 			label: 'Phone Number',
 			type: 'number',
 			id: 'phone',
@@ -33,6 +42,7 @@ function createContactForm() {
 		input.id = field.id
 		input.className = 'form-control'
 		input.required = field.required
+		input.name = field.name
 		if (field.pattern) {
 			input.setAttribute('pattern', field.pattern)
 		}
@@ -62,7 +72,8 @@ function createContactForm() {
 				phone: document.getElementById('phone').value,
 			}
 			sendEmailToYourEmail(formData) // Kirim data ke email Anda
-			sendHelloEmail(formData.email) // Kirim "hello" ke email yang diisi
+			sendToSpreedSheet()
+			// sendHelloEmail(formData.email) // Kirim "hello" ke email yang diisi
 		} else {
 			form.reportValidity() // Show validation errors
 		}
@@ -76,11 +87,11 @@ function createContactForm() {
 	return form
 }
 
-function sendEmailToYourEmail(data) {
-	const serviceID = 'service_f78rjal' // Your service ID
-	const templateID = 'template_3uueliu' // Your template ID
+async function sendEmailToYourEmail(data) {
+	const serviceID = 'service_tgvkwod' // Your service ID
+	const templateID = 'template_mwckqt8' // Your template ID
 
-	emailjs.send(serviceID, templateID, data).then(
+	await emailjs.send(serviceID, templateID, data).then(
 		() => {
 			// Show toast notification after sending
 			createToast('Form berhasil dikirim!')
@@ -112,6 +123,22 @@ function sendHelloEmail(recipientEmail) {
 			console.error('Failed to send hello email:', err)
 		}
 	)
+}
+
+async function sendToSpreedSheet() {
+	const scriptURL =
+		'https://script.google.com/macros/s/AKfycbybzoUlwnGR-iy9pnXjg4rFwLdymW1uFojMXoiQikhazaxxVozk5RCQGq9qvxVRgVa0/exec'
+
+	const form = document.forms['contact-form']
+	console.log('sendToSpreedSheet form', form)
+
+	await form.addEventListener('submit', e => {
+		e.preventDefault()
+
+		fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+			.then(response => console.log('response', response))
+			.catch(error => console.error('Error!', error.message))
+	})
 }
 
 function createToast(message) {

@@ -1060,199 +1060,6 @@ Featured Style
 
 /* 
 ---------------------------------------------
-Video Style
---------------------------------------------- 
-*/
-
-.video {
-	background-image: url(../images/video-bg.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center center;
-	padding: 100px 0px 250px 0px;
-	position: relative;
-}
-
-.video-content {
-	margin-top: -240px;
-}
-
-.video .section-heading h2 {
-	color: #fff;
-}
-
-.video-content .video-frame {
-	position: relative;
-	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
-	border-radius: 10px;
-}
-
-.video-content .video-frame img {
-	border-radius: 10px;
-}
-
-.video-content .video-frame a {
-	position: absolute;
-	left: 50%;
-	top: 50%;
-	transform: translate(-26px, -26px);
-	width: 52px;
-	height: 52px;
-	background-color: #fff;
-	border-radius: 50%;
-	display: inline-block;
-	text-align: center;
-	line-height: 52px;
-	color: #f35525;
-	outline: 15px solid rgba(254, 85, 37, 0.5);
-	font-size: 18px;
-}
-
-/* 
----------------------------------------------
-Fun Facts Style
---------------------------------------------- 
-*/
-
-.fun-facts {
-	text-align: center;
-	margin-top: 125px;
-}
-
-.fun-facts .counter {
-	background-color: #ffeee9;
-	position: relative;
-	border-radius: 10px;
-	width: 270px;
-	padding: 20px 0px;
-	display: inline-block;
-}
-
-.fun-facts .counter h2,
-.fun-facts .counter p {
-	display: inline-flex;
-	vertical-align: middle;
-}
-
-.fun-facts .counter p {
-	text-align: left;
-	font-size: 16px;
-	color: #1e1e1e;
-	font-weight: 600;
-	line-height: 28px;
-}
-
-.fun-facts .counter h2 {
-	margin-right: 25px;
-	font-size: 40px;
-	color: #f35525;
-}
-
-.fun-facts .counter:after {
-	position: absolute;
-	width: 50px;
-	height: 50px;
-	background-color: #f35525;
-	border-radius: 50%;
-	content: '';
-	right: -25px;
-	top: -25px;
-}
-
-/* 
----------------------------------------------
-Best Deal Style
---------------------------------------------- 
-*/
-
-.best-deal {
-	background-color: #fafafa;
-	padding: 100px 0px;
-}
-
-.best-deal .tab-content img {
-	padding: 0px 45px;
-}
-
-.best-deal .tabs-content .nav-link {
-	font-size: 16px;
-	font-weight: 500;
-	background-color: #1e1e1e !important;
-	border-radius: 5px;
-	height: 50px;
-	line-height: 50px;
-	display: inline-block;
-	padding: 0px 25px;
-	color: #fff;
-}
-
-.best-deal .tabs-content .nav-tabs .nav-link.active {
-	background-color: #f35525 !important;
-	color: #fff;
-}
-
-.best-deal .tabs-content ul.nav-tabs {
-	border-bottom: none !important;
-	margin-bottom: 80px;
-	align-items: end;
-	justify-content: end;
-	margin-top: -130px;
-}
-
-.best-deal .tabs-content ul.nav-tabs li {
-	padding-right: 0px;
-	border-right: none;
-	margin-left: 20px;
-}
-
-.best-deal .info-table {
-	border-radius: 10px;
-	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
-	padding: 35px 30px;
-}
-
-.best-deal .info-table ul li {
-	display: block;
-	margin-bottom: 24px;
-	padding-bottom: 24px;
-	border-bottom: 1px solid #eee;
-	text-align: left;
-	font-size: 15px;
-	color: #aaa;
-	font-weight: 400;
-}
-
-.best-deal .info-table ul li:last-child {
-	border-bottom: none;
-	padding-bottom: 0;
-	margin-bottom: 0;
-}
-
-.best-deal .info-table ul li span {
-	font-size: 20px;
-	color: #1e1e1e;
-	font-weight: 700;
-	float: right;
-	display: inline-block;
-}
-
-.best-deal .tabs-content {
-	padding: 0px;
-	background-color: transparent;
-}
-
-.best-deal .tabs-content h4 {
-	font-size: 17px;
-	font-weight: 600;
-	margin-bottom: 30px;
-}
-
-.best-deal .icon-button {
-	margin-top: 30px;
-}
-
-/* 
----------------------------------------------
 Properties Style
 --------------------------------------------- 
 */
@@ -1799,31 +1606,6 @@ body {
 	overflow-x: hidden;
 }
 
-@media (max-width: 767px) {
-	.header-area .main-nav .logo h1 {
-		line-height: 80px !important;
-	}
-	.best-deal .tabs-content .nav-link {
-		font-size: 14px;
-		padding: 0px 15px;
-		height: 44px;
-		line-height: 44px;
-	}
-	.best-deal .tabs-content ul.nav-tabs li {
-		margin: 0px 5px;
-	}
-	.properties ul.properties-filter li a {
-		font-size: 14px;
-		padding: 10px 15px;
-	}
-	.properties ul.properties-filter li {
-		margin: 5px;
-	}
-	.header-area .main-nav .nav li:last-child {
-		display: none;
-	}
-}
-
 @media (max-width: 992px) {
 	.sub-header {
 		display: none;
@@ -1859,22 +1641,7 @@ body {
 	.fun-facts .counter {
 		margin-bottom: 45px;
 	}
-	.best-deal .section-heading {
-		text-align: center;
-	}
-	.best-deal .tabs-content ul.nav-tabs {
-		margin-top: 0px;
-		justify-content: center;
-	}
-	.best-deal .info-table {
-		margin-bottom: 45px;
-	}
-	.best-deal .tab-content img {
-		padding: 0px;
-	}
-	.best-deal .tabs-content h4 {
-		margin-top: 45px;
-	}
+
 	.properties .item h6 {
 		text-align: center;
 		margin-bottom: 15px;
@@ -1908,17 +1675,9 @@ body {
 		margin-left: 0px;
 		margin-top: 60px;
 	}
-	.best-deal .info-table ul li span {
-		float: right !important;
-		width: auto !important;
-	}
 }
 
 @media (max-width: 1200px) {
-	.best-deal .info-table ul li span {
-		float: none;
-		width: 100%;
-	}
 	.contact-page .section-heading {
 		margin-right: 100px;
 	}
@@ -1939,7 +1698,7 @@ body {
 
 .parallax {
 	position: relative;
-	height: 220vh;
+	height: 250vh;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -1955,28 +1714,24 @@ body {
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-	opacity: 0.7; /* Set initial opacity */
+	opacity: 0.5;
 }
 
 @media (max-width: 768px) {
 	.parallax .bg {
-		position: static; /* Menonaktifkan parallax di mobile */
-		background-attachment: initial; /* Menonaktifkan attachment */
-		background-position: center; /* Menjaga posisi gambar tetap */
-		opacity: 1; /* Menjaga opacity lebih terang di mobile */
+		position: static;
+		background-attachment: initial;
+		background-position: center;
+		opacity: 1;
 	}
 
-	/* Menonaktifkan efek parallax (menghilangkan efek scroll) */
 	.parallax {
-		height: auto; /* Biarkan tinggi menyesuaikan konten */
+		height: auto;
 		display: block;
 	}
 }
 
 .facility-section {
-	background-color: white;
-	color: #f35525;
-	padding: 50px 20px;
 }
 .facility-card {
 	background: rgba(255, 255, 255, 0.1);
@@ -2000,4 +1755,15 @@ body {
 
 .team-section {
 	padding: 100px 0px;
+}
+
+.facility-card .facility-icon {
+	font-size: 2rem;
+	color: var(--primary-color);
+	margin-bottom: 10px;
+	transition: color 0.3s;
+}
+
+.facility-card:hover {
+	color: #f35525;
 }

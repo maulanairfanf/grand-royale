@@ -89,14 +89,18 @@
 				<div class="row">
 					<div class="col-lg-8 col-md-8">
 						<ul class="info">
-							<li><i class="fa fa-envelope"></i>Grandroyale20@gmail.com</li>
+							<li>
+								<a class="text-black" href="mailto:grandroyale20@gmail.com">
+									<i class="fa fa-envelope"></i>Grandroyale20@gmail.com
+								</a>
+							</li>
 						</ul>
 					</div>
 					<div class="col-lg-4 col-md-4">
 						<ul class="social-links">
 							<li>
 								<a href="https://www.instagram.com/grandroyale_corp/"
-									><i class="fab fa-road"></i
+									><i class="fab fa-instagram"></i
 								></a>
 							</li>
 						</ul>
@@ -159,6 +163,7 @@
 						<h2>Welcome Home!<br />Your Sanctuary of Comfort</h2>
 					</div>
 				</div> -->
+			</div>
 		</div>
 
 		<div class="container my-5">
@@ -202,14 +207,17 @@
 			</section>
 		</div>
 
-		<div class="contact-us" data-json="assets/json/cirebon/contact-us.json"></div>
+		<div
+			class="contact-us"
+			data-json="assets/json/cirebon/contact-us.json"
+		></div>
 
 		<section class="facility-section">
 			<div class="container">
-				<div class="row" id="heading-container">
+				<div class="row" id="facilitiy-heading-container">
 					<!-- JavaScript will populate heading here -->
 				</div>
-				<div class="row" id="facility-container">
+				<div class="row" id="facility-content-container">
 					<!-- JavaScript will populate content here -->
 				</div>
 			</div>
@@ -309,13 +317,13 @@
 							backgroundPosition: `50% ${
 								-window.innerHeight * getRatio(section)
 							}px`,
-							opacity: 0.7, // Set opacity awal untuk latar belakang
+							opacity: 0.2, // Set opacity awal untuk latar belakang
 						},
 						{
 							backgroundPosition: `50% ${
 								window.innerHeight * (1 - getRatio(section))
 							}px`,
-							opacity: 1, // Opacity berubah menjadi lebih tinggi saat scroll
+							opacity: 0.2, // Opacity berubah menjadi lebih tinggi saat scroll
 							ease: 'none',
 							scrollTrigger: {
 								trigger: section,

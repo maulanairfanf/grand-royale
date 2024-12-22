@@ -1,21 +1,21 @@
 // Data heading
-const heading = {
+const headingFacility = {
 	subtitle: '| Facility',
 	caption:
 		'Hidup nyaman, lengkap dengan fasilitas modern untuk seluruh keluarga.',
 }
 
 // Data fasilitas
-const facilities = [
+const contentFacilities = [
 	{
 		title: 'Taman Bermain',
 		description: 'Area bermain anak-anak yang luas dan aman.',
 		icon: 'fa fa-child',
 	},
 	{
-		title: 'Kolam Renang',
-		description: 'Kolam renang untuk keluarga dan anak-anak.',
-		icon: 'fa fa-swimming-pool',
+		title: 'Komersil Area',
+		description: 'Deretan ruko untuk kebutuhan bisnis dan usaha.',
+		icon: 'fa fa-store',
 	},
 	{
 		title: 'Keamanan 24 Jam',
@@ -30,20 +30,24 @@ const facilities = [
 ]
 
 // Render heading
-const headingContainer = document.getElementById('heading-container')
-headingContainer.innerHTML = `
-            <div class="col-lg-4 offset-lg-4">
+let facilityHeadingContainer = document.getElementById(
+	'facilitiy-heading-container'
+)
+facilityHeadingContainer.innerHTML = `
+            <div class="col-lg-6 offset-lg-3">
                 <div class="section-heading text-center">
-                    <h6>${heading.subtitle}</h6>
-                    <h2>${heading.caption}</h2>
+                    <h6>${headingFacility.subtitle}</h6>
+                    <h2>${headingFacility.caption}</h2>
                 </div>
             </div>
         `
 
 // Render fasilitas
-const facilityContainer = document.getElementById('facility-container')
-facilities.forEach(facility => {
-	facilityContainer.innerHTML += `
+let facilityContentContainer = document.getElementById(
+	'facility-content-container'
+)
+contentFacilities.forEach(facility => {
+	facilityContentContainer.innerHTML += `
                 <div class="col-md-6 col-lg-3 mb-4">
                     <div class="facility-card">
                         <div class="facility-icon">

@@ -89,14 +89,18 @@
 				<div class="row">
 					<div class="col-lg-8 col-md-8">
 						<ul class="info">
-							<li><i class="fa fa-envelope"></i>Grandroyale20@gmail.com</li>
+							<li>
+								<a class="text-black" href="mailto:grandroyale20@gmail.com">
+									<i class="fa fa-envelope"></i>Grandroyale20@gmail.com
+								</a>
+							</li>
 						</ul>
 					</div>
 					<div class="col-lg-4 col-md-4">
 						<ul class="social-links">
 							<li>
 								<a href="https://www.instagram.com/grandroyale_corp/"
-									><i class="fab fa-road"></i
+									><i class="fab fa-instagram"></i
 								></a>
 							</li>
 						</ul>
@@ -167,54 +171,60 @@
 			<div id="contactFormContainer"></div>
 		</div>
 
-		<div class="properties section">
-			<section class="parallax">
-				<div class="bg"></div>
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-4 offset-lg-4">
-							<div class="section-heading text-center">
-								<h6 class="mt-2">| Properties</h6>
-								<h2>
-									<img src="/assets/images/logo.png" /> <br />
-									Make a better living
-								</h2>
-								<div class="main-button" style="margin-top: 10px">
-									<a
-										href="assets/pdf/product-knowledge-slawi.pdf"
-										download="Product_Knowledge.pdf"
-										>Product Knowledge</a
-									>
-									<a
-										href="assets/pdf/product-knowledge-slawi.pdf"
-										download="Product_Knowledge.pdf"
-										>Brosur</a
-									>
-								</div>
-							</div>
+		<div class="parallax">
+			<div class="bg"></div>
+			<div>
+				<section class="introduction text-center">
+					<div class="container">
+						<h1 class="mb-4 ity-card">Memperkenalkan Grand Royale</h1>
+						<p class="lead">
+							Kawasan hunian <strong>modern dan elegan</strong> dengan gaya
+							arsitektur <span style="color: #f35525">American Style</span>,
+							berpadu dengan sentuhan <em>modern klasik</em> yang mewah. Nikmati
+							kenyamanan hidup yang harmonis dan berkelas.
+						</p>
+						<div class="icon-button mt-3">
+							<a href="#explanation-section"
+								><i class="fa fa-chevron-down"></i> Tipe Hunian</a
+							>
 						</div>
 					</div>
-					<div
-						class="row"
-						id="content"
-						data-json="assets/json/slawi/properties.json"
-					></div>
-				</div>
-			</section>
-		</div>
+				</section>
 
-		<div class="contact-us" data-json="assets/json/home/contact-us.json"></div>
+				<section class="explanation-section" id="explanation-section">
+					<div class="container">
+						<div class="row" id="explanation-heading-container">
+							<!-- JavaScript will populate heading here -->
+						</div>
+						<div class="row" id="explanation-content-container">
+							<!-- JavaScript will populate content here -->
+						</div>
+					</div>
+				</section>
 
-		<section class="facility-section">
-			<div class="container">
-				<div class="row" id="heading-container">
-					<!-- JavaScript will populate heading here -->
-				</div>
-				<div class="row" id="facility-container">
-					<!-- JavaScript will populate content here -->
-				</div>
+				<section class="location-investment-section">
+					<div class="container">
+						<div class="row" id="location-investment-heading-container">
+							<!-- JavaScript will populate heading here -->
+						</div>
+						<div class="row" id="location-investment-content-container">
+							<!-- JavaScript will populate content here -->
+						</div>
+					</div>
+				</section>
+
+				<section class="facility-section">
+					<div class="container">
+						<div class="row" id="facilitiy-heading-container">
+							<!-- JavaScript will populate heading here -->
+						</div>
+						<div class="row" id="facility-content-container">
+							<!-- JavaScript will populate content here -->
+						</div>
+					</div>
+				</section>
 			</div>
-		</section>
+		</div>
 
 		<div id="whatsapp-logo"></div>
 
@@ -283,9 +293,12 @@
 		<script src="assets/js/whats-app.js"></script>
 		<script src="assets/js/form-email.js"></script>
 		<script src="assets/js/facility.js"></script>
+		<script src="assets/js/explanation.js"></script>
+		<script src="assets/js/location-investment.js"></script>
+
 		<script>
 			;(function () {
-				emailjs.init('YVDkK0iAqEbTcACgi') // Replace with your user ID
+				emailjs.init('HOu43BUMGlkbl0KQ1') // Replace with your user ID
 			})()
 		</script>
 		<script>
@@ -301,7 +314,7 @@
 					section.bg = section.querySelector('.bg')
 
 					// Berikan gambar latar belakang pada elemen tersebut
-					section.bg.style.backgroundImage = `url('assets/images/background-slawi.png')`
+					section.bg.style.backgroundImage = `url('assets/images/background-home.png')`
 
 					// Atur animasi parallax menggunakan GSAP
 					gsap.fromTo(
@@ -310,13 +323,13 @@
 							backgroundPosition: `50% ${
 								-window.innerHeight * getRatio(section)
 							}px`,
-							opacity: 0.7, // Set opacity awal untuk latar belakang
+							opacity: 0.2, // Set opacity awal untuk latar belakang
 						},
 						{
 							backgroundPosition: `50% ${
 								window.innerHeight * (1 - getRatio(section))
 							}px`,
-							opacity: 1, // Opacity berubah menjadi lebih tinggi saat scroll
+							opacity: 0.2, // Opacity berubah menjadi lebih tinggi saat scroll
 							ease: 'none',
 							scrollTrigger: {
 								trigger: section,
