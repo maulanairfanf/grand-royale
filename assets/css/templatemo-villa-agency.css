@@ -209,7 +209,7 @@ body {
 	font-size: 40px;
 	font-weight: 700;
 	text-transform: capitalize;
-	margin-top: 20px;
+	/* margin-top: 20px; */
 	line-height: 56px;
 }
 
@@ -449,7 +449,7 @@ Header Style
 
 .background-header {
 	background-color: #fff;
-	height: 80px !important;
+	/* height: 80px !important; */
 	position: fixed !important;
 	top: 0 !important;
 	left: 0;
@@ -598,7 +598,7 @@ Header Style
 }
 
 .background-header .main-nav ul.nav {
-	margin-top: 20px;
+	/* margin-top: 20px; */
 }
 
 .header-area .main-nav .menu-trigger span,
@@ -851,11 +851,19 @@ Banner Style
 }
 
 #cirebon .item-2 {
-	background-image: url(../images/cirebon/banner-rumah.png);
+	background-image: url(../images/cirebon/home-77.png);
 }
 
 #cirebon .item-3 {
-	background-image: url(../images/cirebon/banner-fasilitas.png);
+	background-image: url(../images/cirebon/banner-pool.png);
+}
+
+#cirebon .item-4 {
+	background-image: url(../images/cirebon/banner-mosque.png);
+}
+
+#cirebon .item-5 {
+	background-image: url(../images/cirebon/banner-field.png);
 }
 
 #purwokerto .item-1 {
@@ -863,12 +871,12 @@ Banner Style
 }
 
 #purwokerto .item-2 {
-	background-image: url(../images/cirebon/banner-rumah.png);
+	background-image: url(../images/slawi/banner-mushola.png);
 }
 
-/* #purwokerto .item-3 {
-	background-image: url(../images/purwokerto/banner-rumah.png);
-} */
+#purwokerto .item-3 {
+	background-image: url(../images/purwokerto/home-77.png);
+}
 
 .main-banner .item span.category {
 	background-color: #fff;
